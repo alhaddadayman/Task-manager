@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Task Manager</title>
+    
+
+    <!-- Bootstrap CSS Link -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+
+    <!---- Font awesome Link  ---->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+      integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+      crossorigin="anonymous"
+    />
+    <!---- Google Fonts ---->
+    <link
+      href="https://fonts.googleapis.com/css?family=Acme"
+      rel="stylesheet"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+    <!---- CSS File ---->
+    <link rel="stylesheet" href="main.css" />
+    
+  </head>
+
+  <body class=" m-2">
+    <!---- Add New Task Form ---->
+    <form class="form border border-info shadow-lg m-auto p-3  rounded">
+      <p class="d-flex justify-content-center m-2 title">Add New Task</p>
+      <input
+        type="text"
+        id="titleId"
+        class="form-control d-flex justify-content-center m-2"
+        required
+        placeholder="Task Title"
+      />
+      <textarea
+        type="text"
+        id="taskId"
+        class="form-control d-flex justify-content-center m-2"
+        placeholder="New Task"
+        name=""
+        id=""
+        cols="30"
+        rows="2"
+      ></textarea>
+      
+      <input
+        type="date"
+        id="dateId"
+        class="form-control d-flex justify-content-center m-2"
+      />
+      <button
+        type="button"
+        class="btn btn-dark d-flex justify-content-center m-2 button"
+        id="butId"
+        placeholder="Add"
+      >
+        Add
+      </button>
+    </form>
+    <!-- --/Add New Task Form ---->
+
+
+    <!-- Content -->
+    <div class="container">
+        <h1 class="my-4 text-center " id="taskList">Task List</h1>
+      <div class="row text-center mt-5 mb-5"  id="firstDiv">
+
+        <div class="col-lg-3 col-md-6 mb-4 text-center "  id="styleId" title="Drag and Drop">
+          <div class="card h-100">
+            <div class="card-body">
+              <h4 class="card-title">Task Title</h4>
+              <hr/>
+              <p class="card-text">
+                  New Task...
+              </p>
+            </div>
+            <div class="card-footer">
+                <span>01/01/2019</span>
+                <button class="fas fa-trash delete m-2 btn btn-danger"></button>
+                <button class="fas fa-check-square done m-2 btn btn-info "></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mb-4 text-center "  id="styleId" title="Drag and Drop ">
+            <div class="card h-100">
+              <div class="card-body">
+                <h4 class="card-title">Task Title</h4>
+                <hr/>
+                <p class="card-text">
+                    New Task...
+                </p>
+              </div>
+              <div class="card-footer">
+                  <span>01/01/2019</span>
+                  <button class="fas fa-trash delete m-2 btn btn-danger"></button>
+                  <button class="fas fa-check-square done m-2 btn btn-info "></button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mb-4 text-center "  id="styleId" title="Drag and Drop">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h4 class="card-title">Task Title</h4>
+                  <hr/>
+                  <p class="card-text">
+                      New Task...
+                  </p>
+                </div>
+                <div class="card-footer">
+                    <span>01/01/2019</span>
+                    <button class="fas fa-trash delete m-2 btn btn-danger"></button>
+                    <button class="fas fa-check-square done m-2 btn btn-info "></button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 mb-4 text-center "  id="styleId" title="Drag and Drop">
+                <div class="card h-100">
+                  <div class="card-body">
+                    <h4 class="card-title">Task Title</h4>
+                    <hr/>
+                    <p class="card-text">
+                        New Task...
+                    </p>
+                  </div>
+                  <div class="card-footer">
+                      <span>01/01/2019</span>
+                      <button class="fas fa-trash delete m-2 btn btn-danger"></button>
+                      <button class="fas fa-check-square done m-2 btn btn-info "></button>
+                  </div>
+                </div>
+              </div>
+        
+        </div>
+      </div>
+    </div>
+    <!-- Content -->
+
+    <!---- Javascript File ---->
+    <script src="main.js"></script>
+  
+    <!---- Bootstrap Javascript Link ---->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  </body>
+</html>

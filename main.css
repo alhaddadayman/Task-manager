@@ -1,0 +1,42 @@
+body{
+    background-image: url("raj.jpg") !important;
+    background-repeat: no-repeat !important;
+    background-attachment: fixed !important;
+    background-position:center !important;
+    background-size: cover !important;
+   
+    
+}
+.form{
+    display: block !important;
+    width: 50% !important;
+     
+}
+
+
+.title{
+    font-family: 'Acme', sans-serif !important;
+    font-size: 2rem !important;    
+}
+
+
+.card{
+    background: none !important;
+    background-color: rgba(251, 240, 255, 0.267) !important;
+    border: 1px solid rgba(63, 63, 63, 0.747) ;
+}
+
+#taskList{
+    font-family: 'Acme', sans-serif !important;
+    font-size: 4rem !important;
+}
+
+span{
+    font-size: 12px;
+    float: right ;
+    color: #165d97;
+}
+
+a{
+    text-decoration: none;
+}
