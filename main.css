@@ -12,6 +12,11 @@ body{
     width: 50% !important;
      
 }
+@media(max-width:800px){
+    .form{
+        width: 80% !important;
+    }
+}
 
 
 .title{
